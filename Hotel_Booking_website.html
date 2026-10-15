@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream stay Hotel</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial,sans-serif;
+            background-color: #f5f5f5;
+        }
+        header{
+            background-color:#17365d;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+        header h1{
+            margin: 0;
+            font-size:40px;
+        }
+        nav{
+            background-color:#222;
+            text-align:center;
+            padding:15px;
+        }
+        nav a{
+            color:20px;
+            font-size:18px;
+        }
+        nav a:hover{
+            color:#ffd700;
+        }
+        section{
+            padding:30px;
+            text-align:center;
+        }
+        .rooms{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrp:wrap;
+        }
+        .room{
+            width:280px;
+            background-color:white;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px #aaa;
+        }
+        .room h3{
+            color:#17365d;
+        }
+        .prince{
+            color:green;
+            font-weight:bold;
+            font-size:18px;
+        }
+        .booking-form{
+            max-width:500px;
+            margin:auto;
+            background-color:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow: 0 0 10px #aaa;
+            text-align:left;
+        }
+        input,select,textarea{
+            width:100px;
+            padding:10px;
+            margin: 8px 0 18px;
+            box-sizing:border-box;
+        }
+        button{
+            width:100%;
+            padding:12px;
+            background-color:#17365d;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color:#28588f;
+        }
+        footer{
+            background-color:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>Dream Stay Hotel</h1>
+        <p>Your Comfort Is Our Priority</p>
+    </header>
+    <!--Navigation-->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About</a>
+        <a href="booking"Booking></a>
+        <a href="contact">Contact</a>
+    </nav>
+    <!--Home-->
+    <section id="home">
+        <h2>Welcome to Dream Stay Hotel</h2>
+        <p>
+            Enjoy comfortable and relaxing stay with modern facilities and excellent service.
+        </p>
+    </section>
+    <!--Rooms-->
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="rooms">
+            <!--Room 1-->
+            <article class="room">
+                <img src="https://images.unsplash.com/photo"
+                alt ="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>
+                    Comfortable room with a beautidul view and modern facilities.
+                </p>
+                <p class="price">80/Night</p>
+            <button onclick="location.href='#booking'">
+                Book Now
+            </button>
+            </article>
+            <!--Room 2-->
+            <article class="room">
+                <img src="https://image.unsplash.com/photo"
+                alt="Luxury Room">
+                <h3>Luxury Room</h3>
+                <p>
+                    Spacious laxury room with premium facilities and comfortablie beds.
+                </p>
+                <p class="price">120/Night
+                </p>
+                <button onclick="location.href='#booking'">
+                    Book Now
+                </button>
+            </article>
+            <!--Room 3-->
+            <article class="room">
+                <img src="https://images.unsplash.com/photo"
+                alt="Family Room">
+                <h3>Family Room</h3>
+                <p>
+                    Large room suitable for families and groups.
+                </p>
+                <p class="price">150/Night</p>
+                <button onclick="location.href='#booking'">
+                    Book Now
+                </button>
+            </article>
+        </div> 
+    </section>
+    <!--About-->
+    <section id="about">
+        <h2>About Our Hotel</h2>
+        <p>
+            Dreaam Stay Hotel provides clean rooms,delicious food,free Wi-Fi and friendly service.
+        </p>
+    </section>
+    <!--Booking Form-->
+    <section id="booking">
+        <h2>Book Your Room</h2>
+        <form class="Booking-form">
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name"
+            required>
+            <label>Email:</label>
+            <input type="Email"
+            placeholder="Enter your Email"
+            required>
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number:"
+            required>
+            <label>Room Type:</label>
+            <select required>
+                <option value="">Select Room</option>
+                <option>Deluxe Room</option>
+                <option>Luxury Room</option>
+                <option>Family Room</option>
+            </select>
+            <label>Check-in-Date</label>
+            <input type="date" required>
+            <label>Check-out-date:</label>
+            <input type="date" required>
+            <label>Number of Guests:</label>
+            <input type="number" min="1" max="10" placeholder="Enter guests">
+            <label>Special Request:</label>
+            <textarea row="5" placeholder="Enter your request"></textarea>
+            <button type="submit">
+                Confirm Booking
+            </button>
+        </form>
+    </section>
+    <!--Contact-->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Lucknow,Utter Pradesh
+        </p>
+        <p>📞+91 9876543210</p>
+        <p>📧dreamstay@example.com</p>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p>
+            2026 Dream Stay Hotel
+        </p>
+        <p> All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
